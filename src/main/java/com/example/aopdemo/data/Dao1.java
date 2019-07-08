@@ -1,7 +1,6 @@
-package com.example.aopdemo;
+package com.example.aopdemo.data;
 
 import org.springframework.stereotype.Repository;
-import org.springframework.stereotype.Service;
 
 @Repository
 public class Dao1 {

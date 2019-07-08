@@ -1,17 +1,17 @@
-package com.example.aopdemo;
+package com.example.aopdemo.business;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class Business2 {
+public class Business1 {
 	
 	@Autowired
-	private Dao2 dao2;
+	private com.example.aopdemo.data.Dao1 dao1;
 	private String retrievetSomething;
 	public String calculateSomething() {
 		
-		retrievetSomething = dao2.retrievetSomething();
+		retrievetSomething = dao1.retrievetSomething();
 		//for now just return something. Ideally there should be some business logic
 		return retrievetSomething;
 		
