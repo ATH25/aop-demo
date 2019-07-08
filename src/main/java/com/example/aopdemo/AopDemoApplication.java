@@ -29,7 +29,7 @@ public class AopDemoApplication implements CommandLineRunner{
 	}
 
 	@Override
-	public void run(String... args) throws Exception {
+	public void run(String... args) throws Exception {  
 		// TODO Auto-generated method stub
 		logger.info("---------------------------");
 		logger.info(business1.calculateSomething() );
