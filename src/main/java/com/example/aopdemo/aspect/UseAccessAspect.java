@@ -22,9 +22,10 @@ public class UseAccessAspect {
 	 * This means, intercept any class in the package, any method with any number of arguments. 
 	 */
 	
-	@Before("execution(* com.example.aopdemo.business.*.*(..))")
+//	@Before("execution(* com.example.aopdemo.business.*.*(..))")
+	@Before("com.example.aopdemo.aspect.CommonJoinPointConfig.dataLayerExecution()")
 	public void before(JoinPoint joinPoint) {
-		/* advice */
+		/* advice */  
 		logger.info("******* before *******");
 		logger.info(" Check for user access ");
 		logger.info(" --- Allowed execution for {}", joinPoint);

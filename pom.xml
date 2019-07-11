@@ -7,6 +7,7 @@
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.2.0.M4</version>
 		<relativePath/> <!-- lookup parent from repository -->
+		
 	</parent>
 	<groupId>com.example.aop-demo</groupId>
 	<artifactId>aop-demo</artifactId>
@@ -49,8 +50,8 @@
 				</exclusion>
 			</exclusions>
 		</dependency>
-	</dependencies>
-
+	</dependencies>   
+  
 	<build>
 		<plugins>
 			<plugin>
