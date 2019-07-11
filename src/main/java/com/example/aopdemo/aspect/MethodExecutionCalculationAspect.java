@@ -22,7 +22,7 @@ public class MethodExecutionCalculationAspect {
 	
 	
 	/* using @Around */
-	@Around(value = "execution(* com.example.aopdemo.business.*.*(..))" )
+	@Around(value = "com.example.aopdemo.aspect.CommonJoinPointConfig.businessLayerExecution()" )
 	public void around(ProceedingJoinPoint joinPoint) throws Throwable { //the method name doesn't matter. 
 		long startTime = System.currentTimeMillis();
 		joinPoint.proceed();

@@ -20,21 +20,21 @@ public class AfterAopAspect {
 	
 	
 	
-	@AfterReturning(value = "execution(* com.example.aopdemo.business.*.*(..))",
+	@AfterReturning(value = "com.example.aopdemo.aspect.CommonJoinPointConfig.businessLayerExecution()",
 			returning = "result")
 	public void afterReturning(JoinPoint joinPoint, Object result) {
 		logger.info("======== afterReturning ========");
 		logger.info("{} returned with value {}", joinPoint, result);
 	}
 	
-	@AfterThrowing(value = "execution(* com.example.aopdemo.business.*.*(..))", 
+	@AfterThrowing(value = "com.example.aopdemo.aspect.CommonJoinPointConfig.businessLayerExecution()", 
 			throwing = "exception")
 	public void afterThrowing(JoinPoint joinPoint, Object exception) {
 		logger.info("############ afterThrowing ############");
 		logger.info("{} thrown exception {}", joinPoint, exception);
 	}
 	 
-	@After(value = "execution(* com.example.aopdemo.business.*.*(..))")
+	@After(value = "com.example.aopdemo.aspect.CommonJoinPointConfig.businessLayerExecution()")
 	public void after(JoinPoint joinPoint) {
 		logger.info("$$$$$$$$$ after $$$$$$$$$");
 		logger.info(" after the execution of {}", joinPoint);
