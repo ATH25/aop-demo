@@ -8,8 +8,8 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.example.aopdemo.business.Business1;
-import com.example.aopdemo.business.Business2;
-
+import com.example.aopdemo.business.Business2;  
+//
 @SpringBootApplication
 public class AopDemoApplication implements CommandLineRunner{
 	
