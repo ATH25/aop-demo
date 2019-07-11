@@ -19,7 +19,7 @@ public class AopDemoApplication implements CommandLineRunner{
 	private Business1 business1;
 	
 	@Autowired
-	private Business2 business2;
+	private Business2 business2;   
 	
 
 	public static void main(String[] args) {
